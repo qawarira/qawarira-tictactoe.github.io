@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:url("./img/xv.png");
+}
+.game-board{
+    background-color: rgb(250, 194, 241);
+    width: 380px;
+    height: 380px;
+    padding-top: 6px;
+}
+
+#board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board td{
+    float: right;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    background: rgb(245, 6, 225);
+    color: #ccc;
+    list-style: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#x {
+    color: red;
+}
+
+#o{
+    color: blue;
+}
+
+.touch {
+    padding: 10px 0px 10px 0px;
+}
+.touch button {
+    background-color: white;
+    color: black;
+    width: 40%;
+    font-size: 2em;
+    transition: 500ms;
+}
+.touch button:hover {
+    background-color: rgb(101, 167, 179);
+    color: white;
+}
+
+.replay{
+    margin-top: 10px;
+}

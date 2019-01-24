@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./tic.css">
+    <title>Tic Tac Toe Game!</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <h3>Player VS Player</h3>
+        <p>Choose either Player want (x) or (o)</p>
+        <div class="touch">
+            <button type="button" id="x" data-dismiss="modal" onClick="setFig(this.id)"><span class="choose-times">X<span></button>
+            <button type="button" id="o" data-dismiss="modal" onClick="setFig(this.id)"><span class="choose-circle-o">O<span></button>
+        </div>
+        <!-- <form id="choose">
+            <input type="text">
+            <input type="submit">
+        </form> -->
+
+        <div class="game-board">
+            <table id="board">
+                <tr>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+                <td class="cell" id="3"></td>
+                    </tr>
+                <tr>
+                <td class="cell" id="4" ></td>
+                <td class="cell" id="5" ></td>
+                <td class="cell" id="6" ></td>
+                    </tr>
+                <tr>
+                <td class="cell" id="7" ></td>
+                <td class="cell" id="8"></td>
+                <td class="cell" id="9"></td>
+                    </tr>
+            </table>
+        </div>
+
+        <button class="replay" onclick="startNewGame()"><h4>Replay</h4></button>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
